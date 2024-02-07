@@ -31,3 +31,7 @@ export async function upgradeBrew(dep: string) {
 export async function installFlatpak(dep: string) {
   await $`flatpak install flathub ${dep} -y`
 }
+
+export async function installSnap(dep: string) {
+  await $`sudo snap install ${dep}`
+}

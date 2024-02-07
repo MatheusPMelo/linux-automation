@@ -3,7 +3,7 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "build-exec": "bun build ./allInstalation.ts --compile --outfile ./bin/allInstalation"
+    "build-exec": "bun build ./install.ts --compile --outfile ./bin/install"
   },
   "devDependencies": {
     "@types/bun": "latest"

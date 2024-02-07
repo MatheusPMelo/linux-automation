@@ -2,8 +2,8 @@ import Configuration from './configuration'
 import Essentials from './essentials'
 import Atualization from './atualization'
 import Docker from './softwares/docker'
-import VSCode from './softwares/VSCode'
-
+import Flatpaks from './softwares/flatpaks'
+import Snaps from './softwares/snaps'
 
 // initial setup
 Atualization()
@@ -12,3 +12,5 @@ Configuration()
 
 // instalations
 Docker()
+Flatpaks()
+Snaps()
