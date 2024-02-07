@@ -1,0 +1,14 @@
+{
+  "name": "automation-initial-start-on-linux",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build-exec": "bun build ./allInstalation.ts --compile --outfile ./bin/allInstalation"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
