@@ -6,11 +6,11 @@ import Flatpaks from './softwares/flatpaks'
 import Snaps from './softwares/snaps'
 
 // initial setup
-Atualization()
-Essentials()
-Configuration()
+await Atualization()
+await Essentials()
+await Configuration()
 
 // instalations
-Docker()
-Flatpaks()
-Snaps()
+await Docker()
+await Flatpaks()
+await Snaps()
