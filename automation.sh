@@ -1,6 +1,8 @@
 # Atualização inicial do sistema
 sudo apt-get update && sudo apt-get upgrade -y
 
+sudo touch ~/.zshrc
+
 # Download de itens essenciais
 essentialsItems=(
   'git'
@@ -22,7 +24,6 @@ for item in "${essentialsItems[@]}"; do
   sudo apt-get install "$item" -y
 done
 
-source ./src/zsh.sh
 source ./src/asdf.sh
 source ./src/Bun.sh
 source ./src/neovim.sh
@@ -49,3 +50,5 @@ snapInstallations=(
 for item in "${snapInstallations[@]}"; do
   sudo snap install "$item"
 done
+
+source ./src/zsh.sh
