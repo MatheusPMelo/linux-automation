@@ -15,6 +15,7 @@ const essetialsItems = [
   'curl',
   'vim',
   'ninja-build',
+  'snapd',
   'gettext',
   'cmake',
   'unzip',
@@ -33,3 +34,19 @@ await Lunarvim()
 await Pnpm()
 await Asdf()
 await Yarn()
+
+
+const snapInstallations = [
+  'code --classic',
+  'spotify',
+  'slack --classic',
+  'discord',
+  'telegram-desktop',
+  'whatsapp-for-linux',
+  'insomnia',
+  'bw',
+]
+
+for (const item of snapInstallations) {
+  await $`sudo snap install ${item}`
+}
