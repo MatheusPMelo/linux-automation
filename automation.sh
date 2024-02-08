@@ -1,6 +1,7 @@
 # !/bin/bash
 # adicionar docker
 # Atualização inicial do sistema
+cd
 sudo apt-get update && sudo apt-get upgrade -y
 
 sudo touch ~/.zshrc
