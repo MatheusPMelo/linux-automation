@@ -22,6 +22,7 @@ for item in "${essentialsItems[@]}"; do
   sudo apt-get install "$item" -y
 done
 
+source ./src/zsh.sh
 source ./src/asdf.sh
 source ./src/Bun.sh
 source ./src/neovim.sh
