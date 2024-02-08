@@ -7,6 +7,7 @@ import Yarn from './src/Yarn'
 import Bun from './src/Bun'
 import Tmux from './src/Tmux'
 
+await $`cd`
 // Initial update system
 await $`sudo apt-get update && sudo apt-get upgrade -y`
 

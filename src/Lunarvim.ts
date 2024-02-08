@@ -23,6 +23,8 @@ const Lunarvim = async () => {
   await $`sudo sh -c 'curl -o config.lua https://raw.githubusercontent.com/MatheusPMelo/my_lunarvim/main/config.lua?token=GHSAT0AAAAAACNLNZBZSTHV6ZHHAPPANKX4ZOEIQHQ'`
   await $`sudo touch lazy-lock.json`
 
+  await $`cd`
+
   await $`sudo sh -c 'curl -o lazy-lock.json https://raw.githubusercontent.com/MatheusPMelo/my_lunarvim/main/lazy-lock.json?token=GHSAT0AAAAAACNLNZBZDOMX62E3K67FAKI4ZOEISMQ'`
   await $`echo Lunarvim instalado com sucesso! 👏👏👏`
 
