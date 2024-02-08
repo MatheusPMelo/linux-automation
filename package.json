@@ -2,9 +2,6 @@
   "name": "automation-initial-start-on-linux",
   "module": "index.ts",
   "type": "module",
-  "scripts": {
-    "build-exec": "bun build ./install.ts --compile --outfile ./bin/initial-installation"
-  },
   "devDependencies": {
     "@types/bun": "latest"
   },
