@@ -4,7 +4,7 @@
 cd
 sudo apt-get update && sudo apt-get upgrade -y
 
-sudo touch ~/.zshrc
+sudo apt-get install zsh
 
 # Download de itens essenciais
 essentialsItems=(
@@ -141,8 +141,6 @@ snapInstallations=(
 for item in "${snapInstallations[@]}"; do
   sudo snap install "$item"
 done
-
-sudo apt-get install zsh
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
