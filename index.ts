@@ -4,6 +4,8 @@ import Lunarvim from './src/Lunarvim'
 import Pnpm from './src/Pnpm'
 import Asdf from './src/Asdf'
 import Yarn from './src/Yarn'
+import Bun from './src/Bun'
+import Tmux from './src/Tmux'
 
 // Initial update system
 await $`sudo apt-get update && sudo apt-get upgrade -y`
@@ -29,8 +31,10 @@ for (const item of essetialsItems) {
   await $`sudo apt-get install ${item} -y`
 }
 
+await Bun()
 await Neovim()
 await Lunarvim()
+await Tmux()
 await Pnpm()
 await Asdf()
 await Yarn()
